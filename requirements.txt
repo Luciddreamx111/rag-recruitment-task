@@ -1,0 +1,5 @@
+sentence-transformers
+scikit-learn
+transformers
+accelerate
+torch
