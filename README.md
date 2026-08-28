@@ -49,14 +49,7 @@ If no relevant passage is found, the bot responds that it does not know based on
 
 ## Technologies Used
 
-- Python
-- Google Colab
-- `sentence-transformers`
-- Sentence embeddings
-- Cosine similarity
-- Hugging Face Transformers
-- Qwen2.5-0.5B-Instruct
-- GitHub
+Python , Google Colab , `sentence-transformers` , Sentence embeddings , Cosine similarity ,Hugging Face Transformers , Qwen2.5-0.5B-Instruct , GitHub
 
 ## Document Set
 
@@ -108,15 +101,7 @@ This makes the retrieval stage visible instead of hiding it behind a single LLM 
 
 ## What I Learned
 
-During development, I learned how the different parts of a RAG system connect:
-
-- How documents are loaded and divided into chunks
-- What embeddings represent and why they are useful for semantic search
-- How cosine similarity can be used to compare a question with document chunks
-- Why retrieval quality directly affects the final answer
-- How grounding an LLM with retrieved context can reduce unsupported answers
-- Why source citations are important in a document-based Q&A system
-- How to test both questions that are covered and questions that are not covered by the documents
+I made this project by first figuring out what problem I wanted the AI agent to solve and then building the different parts step by step. I used Python and experimented with the code until I could get the basic system working. I also used AI as a learning and debugging aid when I was stuck, especially for understanding errors and figuring out how different parts of the code worked. I tested the project with different questions and checked whether the answers made sense. There were a few things I had to change and simplify along the way, and I kept the parts that were actually useful for the final project. By the end, I focused on understanding how the code works rather than just getting it to run, so that I can explain the approach and decisions I made during the presentation.
 
 I also encountered and debugged issues during development, including model/API limitations and imperfect retrieval results. These experiments helped me understand that building a working RAG system involves evaluating each stage rather than assuming that a generated answer is automatically correct.
 
@@ -138,22 +123,10 @@ This tests the system's ability to avoid confidently answering questions that ca
 
 ## Limitations
 
-This is a small educational RAG system designed around the provided document set.
-
-The retrieval system uses a relatively simple embedding + cosine similarity approach, so semantically related but less relevant passages can sometimes rank highly.
-
-It is intentionally kept simple to make the retrieval and generation pipeline visible and understandable rather than hiding the process behind a high-level RAG framework.
-
-## How to Run
+This is a small educational RAG system designed around the provided document set. The retrieval system uses a relatively simple embedding + cosine similarity approach, so semantically related but less relevant passages can sometimes rank highly. It is intentionally kept simple to make the retrieval and generation pipeline visible.
 
 The project was developed in Google Colab.
 
-1. Open the `.ipynb` notebook in Google Colab.
-2. Run the setup and document-loading cells.
-3. Run the chunking and embedding steps.
-4. Run the retrieval and RAG pipeline.
-5. Start the interactive Q&A loop.
-6. Ask questions about the provided documents.
 
 ## Project Structure
 
