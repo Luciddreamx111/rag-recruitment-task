@@ -99,6 +99,14 @@ and returns the corresponding chunk and similarity score before the answer is ge
 
 This makes the retrieval stage visible instead of hiding it behind a single LLM call.
 
+## About the Google Colab Notebook
+
+I made this project in Google Colab, so I split the code into different cells instead of putting everything together in one big block. Each cell is basically for one part of the project.
+Some cells are used to install and import the libraries I need, while others are used to set things up before the main program runs. I then have separate cells for the functions and the main AI logic. I also used some cells for testing different parts of the code and checking if everything was working properly.
+
+Keeping the code in separate cells made it easier for me to understand what each part was doing and fix things when something went wrong. The last/main part is where all the different pieces come together and the user can actually interact with the AI agent. Since I am still learning, the notebook also contains some testing and trial-and-error from the development process. I kept the useful parts and removed or separated things that weren't needed for the final version.
+
+
 ## What I Learned
 
 I made this project by first figuring out what problem I wanted the AI agent to solve and then building the different parts step by step. I used Python and experimented with the code until I could get the basic system working. I also used AI as a learning and debugging aid when I was stuck, especially for understanding errors and figuring out how different parts of the code worked. I tested the project with different questions and checked whether the answers made sense. There were a few things I had to change and simplify along the way, and I kept the parts that were actually useful for the final project. By the end, I focused on understanding how the code works rather than just getting it to run, so that I can explain the approach and decisions I made during the presentation.
